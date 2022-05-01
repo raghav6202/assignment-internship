@@ -347,6 +347,7 @@
 }
 .table-role {
   display: flex;
+  gap: 0.5rem;
   justify-content: center;
   align-items: center;
 }
@@ -412,4 +413,9 @@
   letter-spacing: 0.2px;
 
   color: #000000;
+}
+
+table tr
+{
+  border: 1px solid #cfd3da;
 }

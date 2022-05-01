@@ -1,22 +1,8 @@
-import "./screen1.css"
-;
+import "./screen2.css";
 
-const Screen1 = () => {
+const Screen2 = () => {
   return (
     <div>
-      <nav className="nav-bar">
-        <div className="side-bar-heading">
-          <div className="side-bar-circle"> </div>
-          <div className="side-bar-text">Classroom Manager </div>
-        </div>
-
-        <div className="left-nav-items">
-          <div className="oval prfile "> </div>
-          <div className="prfile name"> Kishore </div>
-          <div className="profile bell"> 🔔 </div>
-          <div className="profile question"> ❓</div>
-        </div>
-      </nav>
       <div className="main-container">
         <aside className="side-bar">
           <div className="menu">
@@ -61,16 +47,28 @@ const Screen1 = () => {
             </div>
           </div>
 
-          <div className="role-display">
-            <div className="role-elements">
-              <button className="role-btn"> + Add Role</button>
-
-              <div className="role-icon">✏️</div>
-              <div className="role-icon">🗑️</div>
+          <div className="teacher-bar">
+            <div className="teacher-info">
+              <div className="teacher-tag"> ⬅ </div>
+              <div className="teacher-text">Teachers</div>
             </div>
+
+            <div className="menu-icon">🖊️</div>
           </div>
 
           <section className="table-display">
+            <div className="tab-display">
+              <div className="access-tab right-tabs">
+                <div className="permission tab">
+                  <div className="tab-logo"></div>
+                  <div className="tab-name">Access Control</div>
+                </div>
+
+                <div className="approval tab">
+                  <div className="tab-name">Assiged Members</div>
+                </div>
+              </div>
+            </div>
             <table className="table-container">
               <tr className="table head">
                 <td className="table-text">Deparment/Role Name</td>
@@ -83,15 +81,15 @@ const Screen1 = () => {
               <tr className="table row">
                 <td clasName="table-cells">
                   <div className="table-role ">
-                    <input type="radio" className="table-btn" />
-                    <p className="table-text">Teachers</p>
+                    <div className="plus-btn">+</div>
+                    <p className="table-text">Enrolling Students</p>
                   </div>
                 </td>
                 <td clasName="table-cells">
                   {" "}
                   <div className="access-staus"> All Access </div>
                 </td>
-                <td clasName="table-cells">4</td>
+                <td clasName="table-cells">View | Edit | Create | Delete | </td>
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
@@ -102,14 +100,32 @@ const Screen1 = () => {
               <tr className="table row">
                 <td clasName="table-cells">
                   <div className="table-role ">
-                    <input type="radio" className="table-btn" />
-                    <p className="table-text">External Faculty</p>
+                    <div className="plus-btn">+</div>
+                    <p className="table-text">Financial Details</p>
+                  </div>
+                </td>
+                <td clasName="table-cells">
+                  <p className="noaccess access-staus"> No Access</p>
+                </td>
+                <td clasName="table-cells"> </td>
+                <td clasName="table-cells">1 min ago </td>
+                <td clasName="table-cells">
+                  {" "}
+                  <div className="table-icon"> 👁️ </div>
+                </td>
+              </tr>
+
+              <tr className="table row">
+                <td clasName="table-cells">
+                  <div className="table-role ">
+                    <div className="plus-btn">+</div>
+                    <p className="table-text">Furniture order</p>
                   </div>
                 </td>
                 <td clasName="table-cells">
                   <p className="restricted access-staus"> Restricted Access</p>
                 </td>
-                <td clasName="table-cells">8</td>
+                <td clasName="table-cells">View | Create </td>
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
@@ -120,33 +136,15 @@ const Screen1 = () => {
               <tr className="table row">
                 <td clasName="table-cells">
                   <div className="table-role ">
-                    <input type="radio" className="table-btn" />
-                    <p className="table-text">Lab Assistants</p>
-                  </div>
-                </td>
-                <td clasName="table-cells">
-                  <p className="restricted access-staus"> Restricted Access</p>
-                </td>
-                <td clasName="table-cells">16</td>
-                <td clasName="table-cells">1 min ago </td>
-                <td clasName="table-cells">
-                  {" "}
-                  <div className="table-icon"> 👁️ </div>
-                </td>
-              </tr>
-
-              <tr className="table row">
-                <td clasName="table-cells">
-                  <div className="table-role ">
-                    <input type="radio" className="table-btn" />
-                    <p className="table-text">Non Teaching Staff</p>
+                    <div className="plus-btn">+</div>
+                    <p className="table-text">Technological Equipment</p>
                   </div>
                 </td>
                 <td clasName="table-cells">
                   <p className="restricted access-staus"> Restricted Access</p>
                 </td>
 
-                <td clasName="table-cells">4</td>
+                <td clasName="table-cells">View | Create </td>
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
@@ -157,15 +155,34 @@ const Screen1 = () => {
               <tr className="table row">
                 <td clasName="table-cells">
                   <div className="table-role ">
-                    <input type="radio" className="table-btn" />
-                    <p className="table-text">Supervisors</p>
+                    <div className="plus-btn">+</div>
+                    <p className="table-text">Organisational Modification</p>
                   </div>
                 </td>
                 <td clasName="table-cells">
                   {" "}
                   <p className="access-staus"> Restricted Access</p>
                 </td>
-                <td clasName="table-cells">1</td>
+                <td clasName="table-cells">View | Edit | Create | Delete | </td>
+                <td clasName="table-cells">1 min ago </td>
+                <td clasName="table-cells">
+                  {" "}
+                  <div className="table-icon"> 👁️ </div>
+                </td>
+              </tr>
+
+              <tr className="table row">
+                <td clasName="table-cells">
+                  <div className="table-role ">
+                    <div className="plus-btn">+</div>
+                    <p className="table-text">Permissions & Access Control</p>
+                  </div>
+                </td>
+                <td clasName="table-cells">
+                  {" "}
+                  <p className="noaccess access-staus"> No Access</p>
+                </td>
+                <td clasName="table-cells"> </td>
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
@@ -180,6 +197,4 @@ const Screen1 = () => {
   );
 };
 
-export { Screen1 };
-
-
+export { Screen2 };
