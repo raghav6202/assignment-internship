@@ -1,29 +1,16 @@
 import "./screen2.css";
 
+import { Navbar } from "../../comps/nav-bar/nav-bar";
+import { Sidebar } from "../../comps/side-bar/side-bar";
 const Screen2 = () => {
   return (
     <div>
+
+<Navbar />
+
       <div className="main-container">
-        <aside className="side-bar">
-          <div className="menu">
-            <div className="menu-icon"> 🚧 </div>
-
-            <div className="menu-text"> Projects</div>
-          </div>
-
-          <div className="menu">
-            <div className="menu-icon"> 💼 </div>
-
-            <div className="menu-text"> Classrooms</div>
-          </div>
-
-          <div className="red menu ">
-            <div className="red-selector"> </div>
-            <div className="red menu-icon"> 🛡️ </div>
-
-            <div className="red menu-text"> Permissions</div>
-          </div>
-        </aside>
+        
+      <Sidebar />
 
         <main className="main-display">
           <div className="tab-display">
