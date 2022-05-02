@@ -1,4 +1,6 @@
 import "./screen1.css";
+import { Navbar } from "../../comps/nav-bar/nav-bar.jsx";
+import { Sidebar } from "../../comps/side-bar/side-bar.jsx";
 import {
   AiOutlineAppstore,
   AiOutlineSync,
@@ -7,8 +9,7 @@ import {
 } from "react-icons/ai";
 import { BiPencil, BiTrashAlt } from "react-icons/bi";
 import { HiOutlineWifi } from "react-icons/hi";
-import { Navbar } from "../../comps/nav-bar/nav-bar";
-import { Sidebar } from "../../comps/side-bar/side-bar";
+
 
 const Screen1 = () => {
   return (

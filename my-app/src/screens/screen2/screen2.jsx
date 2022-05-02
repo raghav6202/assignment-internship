@@ -1,7 +1,7 @@
 import "./screen2.css";
 
-import { Navbar } from "../../comps/nav-bar/nav-bar";
-import { Sidebar } from "../../comps/side-bar/side-bar";
+import { Navbar } from "../../comps/nav-bar/nav-bar.jsx";
+import { Sidebar } from "../../comps/side-bar/side-bar.jsx";
 
 import {
   AiOutlineAppstore,

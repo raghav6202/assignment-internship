@@ -1,8 +1,8 @@
 import "./screen3.css";
 
-import { Navbar } from "../../comps/nav-bar/nav-bar";
+import { Navbar } from "../../comps/nav-bar/nav-bar.jsx";
 
-import { Sidebar } from "../../comps/side-bar/side-bar";
+import { Sidebar } from "../../comps/side-bar/side-bar.jsx";
 import {
   AiOutlineAppstore,
   AiOutlineSync,
