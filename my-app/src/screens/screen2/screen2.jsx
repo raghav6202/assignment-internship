@@ -2,33 +2,48 @@ import "./screen2.css";
 
 import { Navbar } from "../../comps/nav-bar/nav-bar";
 import { Sidebar } from "../../comps/side-bar/side-bar";
+
+import {
+  AiOutlineAppstore,
+  AiOutlineSync,
+  AiOutlinePlus,
+  AiOutlineEye,
+} from "react-icons/ai";
+import { BiPencil, BiTrashAlt } from "react-icons/bi";
+import { HiOutlineWifi } from "react-icons/hi";
+import { BsArrowLeft, BsToggleOff, BsToggleOn } from "react-icons/bs";
 const Screen2 = () => {
   return (
     <div>
-
-<Navbar />
+      <Navbar />
 
       <div className="main-container">
-        
-      <Sidebar />
+        <Sidebar />
 
         <main className="main-display">
           <div className="tab-display">
             <div className="right-tabs">
               <div className="permission tab">
-                <div className="tab-logo">🔥</div>
+                <div className="tab-logo">
+                  <HiOutlineWifi />
+                </div>
                 <div className="tab-name">Permissions</div>
               </div>
 
               <div className="approval tab">
-                <div className="tab-logo">🫥</div>
+                <div className="tab-logo">
+                  <AiOutlineAppstore />
+                </div>
                 <div className="tab-name">Approval Matrix</div>
               </div>
             </div>
 
             <div className="left-tabs">
               <div className="tab">
-                <div className="last-sync-logo"> 🌀</div>
+                <div className="last-sync-logo">
+                  {" "}
+                  <AiOutlineSync />
+                </div>
                 <div className="last-sync-text">Last sync 15min ago </div>
               </div>
             </div>
@@ -36,11 +51,16 @@ const Screen2 = () => {
 
           <div className="teacher-bar">
             <div className="teacher-info">
-              <div className="teacher-tag"> ⬅ </div>
+              <div className="teacher-tag">
+                {" "}
+                <BsArrowLeft />{" "}
+              </div>
               <div className="teacher-text">Teachers</div>
             </div>
 
-            <div className="menu-icon">🖊️</div>
+            <div className="menu-icon">
+              <BiPencil />
+            </div>
           </div>
 
           <section className="table-display">
@@ -68,7 +88,9 @@ const Screen2 = () => {
               <tr className="table row">
                 <td clasName="table-cells">
                   <div className="table-role ">
-                    <div className="plus-btn">+</div>
+                    <div className="plus-btn">
+                      <AiOutlinePlus />
+                    </div>
                     <p className="table-text">Enrolling Students</p>
                   </div>
                 </td>
@@ -80,14 +102,19 @@ const Screen2 = () => {
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
-                  <div className="table-icon"> 👁️ </div>
+                  <div className="table-icon">
+                    {" "}
+                    <BsToggleOn />{" "}
+                  </div>
                 </td>
               </tr>
 
               <tr className="table row">
                 <td clasName="table-cells">
                   <div className="table-role ">
-                    <div className="plus-btn">+</div>
+                    <div className="plus-btn">
+                      <AiOutlinePlus />
+                    </div>
                     <p className="table-text">Financial Details</p>
                   </div>
                 </td>
@@ -98,14 +125,19 @@ const Screen2 = () => {
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
-                  <div className="table-icon"> 👁️ </div>
+                  <div className="table-icon">
+                    {" "}
+                    <BsToggleOff />{" "}
+                  </div>
                 </td>
               </tr>
 
               <tr className="table row">
                 <td clasName="table-cells">
                   <div className="table-role ">
-                    <div className="plus-btn">+</div>
+                    <div className="plus-btn">
+                      <AiOutlinePlus />
+                    </div>
                     <p className="table-text">Furniture order</p>
                   </div>
                 </td>
@@ -116,14 +148,19 @@ const Screen2 = () => {
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
-                  <div className="table-icon"> 👁️ </div>
+                  <div className="table-icon">
+                    {" "}
+                    <BsToggleOn />{" "}
+                  </div>
                 </td>
               </tr>
 
               <tr className="table row">
                 <td clasName="table-cells">
                   <div className="table-role ">
-                    <div className="plus-btn">+</div>
+                    <div className="plus-btn">
+                      <AiOutlinePlus />
+                    </div>
                     <p className="table-text">Technological Equipment</p>
                   </div>
                 </td>
@@ -135,14 +172,19 @@ const Screen2 = () => {
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
-                  <div className="table-icon"> 👁️ </div>
+                  <div className="table-icon">
+                    {" "}
+                    <BsToggleOn />{" "}
+                  </div>
                 </td>
               </tr>
 
               <tr className="table row">
                 <td clasName="table-cells">
                   <div className="table-role ">
-                    <div className="plus-btn">+</div>
+                    <div className="plus-btn">
+                      <AiOutlinePlus />
+                    </div>
                     <p className="table-text">Organisational Modification</p>
                   </div>
                 </td>
@@ -154,14 +196,19 @@ const Screen2 = () => {
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
-                  <div className="table-icon"> 👁️ </div>
+                  <div className="table-icon">
+                    {" "}
+                    <BsToggleOn />{" "}
+                  </div>
                 </td>
               </tr>
 
               <tr className="table row">
                 <td clasName="table-cells">
                   <div className="table-role ">
-                    <div className="plus-btn">+</div>
+                    <div className="plus-btn">
+                      <AiOutlinePlus />
+                    </div>
                     <p className="table-text">Permissions & Access Control</p>
                   </div>
                 </td>
@@ -173,7 +220,10 @@ const Screen2 = () => {
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
-                  <div className="table-icon"> 👁️ </div>
+                  <div className="table-icon">
+                    {" "}
+                    <BsToggleOff />{" "}
+                  </div>
                 </td>
               </tr>
             </table>

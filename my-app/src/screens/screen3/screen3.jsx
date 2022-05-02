@@ -3,31 +3,47 @@ import "./screen3.css";
 import { Navbar } from "../../comps/nav-bar/nav-bar";
 
 import { Sidebar } from "../../comps/side-bar/side-bar";
-
+import {
+  AiOutlineAppstore,
+  AiOutlineSync,
+  AiOutlinePlus,
+  AiOutlineEye,
+  AiOutlineMinus,
+} from "react-icons/ai";
+import { BiPencil, BiTrashAlt } from "react-icons/bi";
+import { HiOutlineWifi } from "react-icons/hi";
+import { BsArrowLeft, BsToggleOff, BsToggleOn } from "react-icons/bs";
 const Screen3 = () => {
   return (
     <div>
       <Navbar />
       <div className="main-container">
-       <Sidebar />
+        <Sidebar />
 
         <main className="main-display">
           <div className="tab-display">
             <div className="right-tabs">
               <div className="permission tab">
-                <div className="tab-logo">🔥</div>
+                <div className="tab-logo">
+                  <HiOutlineWifi />
+                </div>
                 <div className="tab-name">Permissions</div>
               </div>
 
               <div className="approval tab">
-                <div className="tab-logo">🫥</div>
+                <div className="tab-logo">
+                  <AiOutlineAppstore />
+                </div>
                 <div className="tab-name">Approval Matrix</div>
               </div>
             </div>
 
             <div className="left-tabs">
               <div className="tab">
-                <div className="last-sync-logo"> 🌀</div>
+                <div className="last-sync-logo">
+                  {" "}
+                  <AiOutlineSync />
+                </div>
                 <div className="last-sync-text">Last sync 15min ago </div>
               </div>
             </div>
@@ -35,11 +51,16 @@ const Screen3 = () => {
 
           <div className="teacher-bar">
             <div className="teacher-info">
-              <div className="teacher-tag"> ⬅ </div>
+              <div className="teacher-tag">
+                {" "}
+                <BsArrowLeft />{" "}
+              </div>
               <div className="teacher-text">Teachers</div>
             </div>
 
-            <div className="menu-icon">🖊️</div>
+            <div className="menu-icon">
+              <BiPencil />
+            </div>
           </div>
 
           <section className="table-display">
@@ -63,11 +84,13 @@ const Screen3 = () => {
                 <td className="table-text">Last Updated</td>
                 <td className="table-text"> </td>
               </tr>
-              
+
               <tr className="table row">
                 <td clasName="table-cells">
                   <div className="table-role ">
-                    <div className="plus-btn">+</div>
+                    <div className="plus-btn">
+                      <AiOutlinePlus />
+                    </div>
                     <p className="table-text">Enrolling Students</p>
                   </div>
                 </td>
@@ -79,114 +102,123 @@ const Screen3 = () => {
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
-                  <div className="table-icon"> 👁️ </div>
+                  <div className="table-icon">
+                    {" "}
+                    <BsToggleOn />{" "}
+                  </div>
                 </td>
               </tr>
-              
+
               <tr className="table row">
-
-<div className="open-row">
-<div className="table-role ">
-<div className="plus-btn">-</div>
+                <div className="open-row">
+                  <div className="table-role ">
+                    <div className="plus-btn">
+                      <AiOutlineMinus />
+                    </div>
                     <p className="table-text">Financial Details</p>
+                  </div>
 
-</div>
+                  <div className="cells">
+                    <div className="access-cell">
+                      <div className="accsess-head">Access Control</div>
 
-<div className="cells">
+                      <div className="accsess-child">
+                        <input
+                          type="radio"
+                          name=""
+                          id=""
+                          className="access-btn"
+                        />
 
-<div className="access-cell">
+                        <div className="accsess-type">
+                          <div>All Access</div>
+                          <p className="acc-desc">Can access all items</p>
+                        </div>
+                      </div>
 
-<div className="accsess-head">Access Control</div>
+                      <div className="accsess-child">
+                        <input
+                          type="radio"
+                          name=""
+                          id=""
+                          className="checked access-btn"
+                          checked
+                        />
 
-<div className="accsess-child">
-    
-<input type="radio" name="" id="" className="access-btn" />
+                        <div className="accsess-type">
+                          <div>Restricted Access</div>
+                          <p className="acc-desc">Can access all items</p>
+                        </div>
+                      </div>
+                    </div>
 
-<div className="accsess-type">
-    <div >All Access</div>
-    <p className="acc-desc">Can access all items</p>
-</div>
+                    {/* ----------------- */}
 
-</div>
+                    <div className="perm access-cell">
+                      <div className="perm-head">Permissions</div>
 
+                      <div className="perm-child">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id=""
+                          className="access-btn"
+                        />
 
-<div className="accsess-child">
-    
-<input type="radio" name="" id="" className="checked access-btn"  checked/>
+                        <div className="perm-type">
+                          <div>View items in access</div>
+                        </div>
+                      </div>
 
-<div className="accsess-type">
-    <div >Restricted Access</div>
-    <p className="acc-desc">Can access all items</p>
-</div>
+                      <div className="perm-child">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id=""
+                          className="checked access-btn"
+                          checked
+                        />
 
-</div>
+                        <div className="perm-type">
+                          <div>Edit items in access</div>
+                        </div>
+                      </div>
 
+                      <div className="perm-child">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id=""
+                          className="access-btn"
+                        />
 
+                        <div className="perm-type">
+                          <div>Create items in access</div>
+                        </div>
+                      </div>
 
-</div>
+                      <div className="perm-child">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id=""
+                          className="access-btn"
+                        />
 
-{/* ----------------- */}
-
-<div className="perm access-cell">
-
-<div className="perm-head">Permissions</div>
-
-<div className="perm-child">
-    
-<input type="checkbox" name="" id="" className="access-btn" />
-
-<div className="perm-type">
-    <div >View items in access</div>
-</div>
-
-</div>
-
-
-<div className="perm-child">
-    
-<input type="checkbox" name="" id="" className="checked access-btn"  checked/>
-
-<div className="perm-type">
-    <div >Edit items in access</div>
-    
-</div>
-
-</div>
-
-
-
-<div className="perm-child">
-    
-<input type="checkbox" name="" id="" className="access-btn" />
-
-<div className="perm-type">
-    <div >Create items in access</div>
-</div>
-
-</div>
-
-
-
-<div className="perm-child">
-    
-<input type="checkbox" name="" id="" className="access-btn" />
-
-<div className="perm-type">
-    <div >Delete items in access</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-<td></td>
-<td clasName="table-cells">View | Create </td>
-<td clasName="table-cells">1 min ago </td>
-
+                        <div className="perm-type">
+                          <div>Delete items in access</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <td></td>
+                <td clasName="table-cells">View | Create </td>
+                <td clasName="table-cells">1 min ago </td>
 
                 {/* <td clasName="table-cells">
                   <div className="table-role ">
-                    <div className="plus-btn">+</div>
+                    <div className="plus-btn"><AiOutlinePlus /></div>
                     <p className="table-text">Financial Details</p>
                   </div>
                 </td>
@@ -197,14 +229,16 @@ const Screen3 = () => {
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
-                  <div className="table-icon"> 👁️ </div>
+                  <div className="table-icon"> <BsToggleOn /> </div>
                 </td> */}
               </tr>
-              
+
               <tr className="table row">
                 <td clasName="table-cells">
                   <div className="table-role ">
-                    <div className="plus-btn">+</div>
+                    <div className="plus-btn">
+                      <AiOutlinePlus />
+                    </div>
                     <p className="table-text">Furniture order</p>
                   </div>
                 </td>
@@ -215,14 +249,19 @@ const Screen3 = () => {
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
-                  <div className="table-icon"> 👁️ </div>
+                  <div className="table-icon">
+                    {" "}
+                    <BsToggleOn />{" "}
+                  </div>
                 </td>
               </tr>
-              
+
               <tr className="table row">
                 <td clasName="table-cells">
                   <div className="table-role ">
-                    <div className="plus-btn">+</div>
+                    <div className="plus-btn">
+                      <AiOutlinePlus />
+                    </div>
                     <p className="table-text">Technological Equipment</p>
                   </div>
                 </td>
@@ -234,14 +273,19 @@ const Screen3 = () => {
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
-                  <div className="table-icon"> 👁️ </div>
+                  <div className="table-icon">
+                    {" "}
+                    <BsToggleOn />{" "}
+                  </div>
                 </td>
               </tr>
-              
+
               <tr className="table row">
                 <td clasName="table-cells">
                   <div className="table-role ">
-                    <div className="plus-btn">+</div>
+                    <div className="plus-btn">
+                      <AiOutlinePlus />
+                    </div>
                     <p className="table-text">Organisational Modification</p>
                   </div>
                 </td>
@@ -253,14 +297,19 @@ const Screen3 = () => {
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
-                  <div className="table-icon"> 👁️ </div>
+                  <div className="table-icon">
+                    {" "}
+                    <BsToggleOn />{" "}
+                  </div>
                 </td>
               </tr>
 
               <tr className="table row">
                 <td clasName="table-cells">
                   <div className="table-role ">
-                    <div className="plus-btn">+</div>
+                    <div className="plus-btn">
+                      <AiOutlinePlus />
+                    </div>
                     <p className="table-text">Permissions & Access Control</p>
                   </div>
                 </td>
@@ -272,10 +321,12 @@ const Screen3 = () => {
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
-                  <div className="table-icon"> 👁️ </div>
+                  <div className="table-icon">
+                    {" "}
+                    <BsToggleOff />{" "}
+                  </div>
                 </td>
               </tr>
-              
             </table>
           </section>
         </main>

@@ -1,38 +1,47 @@
 import "./screen1.css";
-
-
+import {
+  AiOutlineAppstore,
+  AiOutlineSync,
+  AiOutlinePlus,
+  AiOutlineEye,
+} from "react-icons/ai";
+import { BiPencil, BiTrashAlt } from "react-icons/bi";
+import { HiOutlineWifi } from "react-icons/hi";
 import { Navbar } from "../../comps/nav-bar/nav-bar";
 import { Sidebar } from "../../comps/side-bar/side-bar";
 
 const Screen1 = () => {
   return (
     <div>
-      
-<Navbar />
-
-
+      <Navbar />
 
       <div className="main-container">
-       
-      <Sidebar />
+        <Sidebar />
 
         <main className="main-display">
           <div className="tab-display">
             <div className="right-tabs">
               <div className="permission tab">
-                <div className="tab-logo">🔥</div>
+                <div className="tab-logo">
+                  <HiOutlineWifi />
+                </div>
                 <div className="tab-name">Permissions</div>
               </div>
 
               <div className="approval tab">
-                <div className="tab-logo">🫥</div>
+                <div className="tab-logo">
+                  <AiOutlineAppstore />
+                </div>
                 <div className="tab-name">Approval Matrix</div>
               </div>
             </div>
 
             <div className="left-tabs">
               <div className="tab">
-                <div className="last-sync-logo"> 🌀</div>
+                <div className="last-sync-logo">
+                  {" "}
+                  <AiOutlineSync />
+                </div>
                 <div className="last-sync-text">Last sync 15min ago </div>
               </div>
             </div>
@@ -40,10 +49,17 @@ const Screen1 = () => {
 
           <div className="role-display">
             <div className="role-elements">
-              <button className="role-btn"> + Add Role</button>
+              <button className="role-btn">
+                {" "}
+                <AiOutlinePlus /> Add Role
+              </button>
 
-              <div className="role-icon">✏️</div>
-              <div className="role-icon">🗑️</div>
+              <div className="role-icon">
+                <BiPencil />
+              </div>
+              <div className="role-icon">
+                <BiTrashAlt />
+              </div>
             </div>
           </div>
 
@@ -72,7 +88,10 @@ const Screen1 = () => {
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
-                  <div className="table-icon"> 👁️ </div>
+                  <div className="table-icon">
+                    {" "}
+                    <AiOutlineEye />{" "}
+                  </div>
                 </td>
               </tr>
 
@@ -90,7 +109,10 @@ const Screen1 = () => {
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
-                  <div className="table-icon"> 👁️ </div>
+                  <div className="table-icon">
+                    {" "}
+                    <AiOutlineEye />{" "}
+                  </div>
                 </td>
               </tr>
 
@@ -108,7 +130,10 @@ const Screen1 = () => {
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
-                  <div className="table-icon"> 👁️ </div>
+                  <div className="table-icon">
+                    {" "}
+                    <AiOutlineEye />{" "}
+                  </div>
                 </td>
               </tr>
 
@@ -127,7 +152,10 @@ const Screen1 = () => {
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
-                  <div className="table-icon"> 👁️ </div>
+                  <div className="table-icon">
+                    {" "}
+                    <AiOutlineEye />{" "}
+                  </div>
                 </td>
               </tr>
 
@@ -146,7 +174,10 @@ const Screen1 = () => {
                 <td clasName="table-cells">1 min ago </td>
                 <td clasName="table-cells">
                   {" "}
-                  <div className="table-icon"> 👁️ </div>
+                  <div className="table-icon">
+                    {" "}
+                    <AiOutlineEye />{" "}
+                  </div>
                 </td>
               </tr>
             </table>
@@ -158,5 +189,3 @@ const Screen1 = () => {
 };
 
 export { Screen1 };
-
-
